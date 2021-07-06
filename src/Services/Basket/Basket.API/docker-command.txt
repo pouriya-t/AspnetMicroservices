@@ -18,13 +18,7 @@ in environment type this command for work with redis : redis-cli
 
 
 
-
-
-
-
-
-
-
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 
 
