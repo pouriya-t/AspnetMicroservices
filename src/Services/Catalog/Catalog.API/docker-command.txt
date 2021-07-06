@@ -22,7 +22,9 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml down
 
 
 
-
+additional:
+mongo client for gui mongodb
+docker run -d -p 3000:3000 mongoclient/mongoclient
 
 
 
