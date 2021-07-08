@@ -23,6 +23,18 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 
 
+if we change another projects and we want update this for images and containers run this command:
+
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+
+
+We are doing this because we have changed in the basket API and in the basket API container and it should 
+be updated with the latest codes in order to integrate with the discount your PC Marquitos.
+
+
+
+
+
 Redis Commands :
 
 
