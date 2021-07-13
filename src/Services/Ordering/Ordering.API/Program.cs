@@ -12,15 +12,15 @@ namespace Ordering.API
         public static void Main(string[] args)
         {
             CreateHostBuilder(args)
-               .Build()
-               .MigrateDatabase<OrderContext>((context, services) =>
-               {
-                   var logger = services.GetService<ILogger<OrderContextSeed>>();
-                   OrderContextSeed
+                .Build()
+                .MigrateDatabase<OrderContext>((context, services) =>
+                {
+                    var logger = services.GetService<ILogger<OrderContextSeed>>();
+                    OrderContextSeed
                         .SeedAsync(context, logger)
                         .Wait();
-               })
-               .Run();
+                })
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

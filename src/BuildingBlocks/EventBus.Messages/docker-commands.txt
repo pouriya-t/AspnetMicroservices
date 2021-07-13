@@ -1,0 +1,1 @@
+﻿rabbitmq user and password is : guest

@@ -1,0 +1,4 @@
+﻿Important !!!
+when run this project on the windows or docker your services sql server should be stopped .
+go to the services.msc and stop SQL Server (MSSQLSERVER)
+because localhost and . use port 1433 and conflict with them
